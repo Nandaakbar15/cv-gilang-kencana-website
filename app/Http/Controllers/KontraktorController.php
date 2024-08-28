@@ -12,7 +12,10 @@ class KontraktorController extends Controller
      */
     public function index()
     {
-        return view('dashboardadmin.datakontraktor.daftarkontraktor');
+        $kontraktor = Kontraktor::all();
+        return view('dashboardadmin.datakontraktor.daftarkontraktor', [
+            'kontraktor' => $kontraktor
+        ]);
     }
 
     /**
@@ -28,15 +31,22 @@ class KontraktorController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $validateData = $request->validate([
+            "nama" => "required",
+            "email" => "required",
+            "alamat" => "required",
+            "no_telp" => "required",
+            "specialist" => "required",
+            "foto" => "required|image|mimes:jpeg,png,jpg,gif|max:2048"
+        ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Kontraktor $kontraktor)
-    {
-        //
+        $file = $request->file('foto');
+        $fileName = time() . '_' . $file->getClientOriginalName();
+        $path = $file->storeAs('images', $fileName, 'public');
+        $validateData['foto'] = '/storage/' . $path;
+
+        Kontraktor::create($validateData);
+        return redirect('/admin/daftarkontraktor')->with('success', 'Data kontraktor berhasil ditambahkan!');
     }
 
     /**

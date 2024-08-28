@@ -20,6 +20,10 @@ Route::post('/register', 'App\Http\Controllers\RegisterController@register'); //
 // routes admin
 Route::middleware(['web', 'auth', 'checkRole:admin'])->group(function () {
     Route::get("/admin/home", "App\Http\Controllers\AdminController@index");
+    Route::get("/admin/datauser", "App\Http\Controllers\UserController@index");
+    Route::delete("/admin/hapusdatauser/{user}", "App\Http\Controllers\UserController@deleteUser");
+    Route::get("/admin/daftarkontraktor", "App\Http\Controllers\KontraktorController@index");
+    Route::get("/admin/viewtambahkontraktor", "App\Http\Controllers\KontraktorController@create");
 });
 
 // routes user
