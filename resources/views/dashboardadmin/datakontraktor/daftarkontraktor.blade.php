@@ -13,6 +13,7 @@
                             <th>Nama Kontraktor</th>
                             <th>Alamat</th>
                             <th>Nomor HP</th>
+                            <th>Email Kontraktor</th>
                             <th>Specialist</th>
                             <th>Action</th>
                           </tr>
@@ -20,16 +21,17 @@
                         <tbody>
                           @foreach ($kontraktor as $item)
                            <tr>
-                                <td><img src="{{ asset($item->foto) }}" width="130px" height="200px"></td>
+                                <td><img src="{{ asset($item->foto) }}" width="130px" height="300px"></td>
                                 <td>{{ $item->nama }}</td>
                                 <td>{{ $item->alamat }}</td>
-                                <td>{{ $item->no_hp }}</td>
+                                <td>{{ $item->no_telp }}</td>
+                                <td>{{ $item->email }}</td>
                                 <td>{{ $item->specialist }}</td>
                                 <td>
-                                    <a href="/admin/ubahKontraktor/{{ $item->id }}" class="btn btn-primary"><img src="{{ asset('images/edit.png') }}" alt="" width="60px" height="60px"></a>
+                                    <a href="/admin/ubahkontraktor/{{ $item->id_kontraktor }}" class="btn btn-primary"><img src="{{ asset('images/edit.png') }}" alt="" width="60px" height="60px"></a>
                                 </td>
                                 <td>
-                                    <form action="/hapusKontraktor/{{ $item->id }}" class="d-inline" method="POST">
+                                    <form action="/admin/hapusKontraktor/{{ $item->id_kontraktor }}" class="d-inline" method="POST">
                                         @method('delete')
                                         @csrf
                                         <button class="badge border-0" onclick="return confirm('Yakin mau hapus data ini?')"><img src="{{ asset('images/delete.png') }}" alt="" width="60px" height="60px"></button>

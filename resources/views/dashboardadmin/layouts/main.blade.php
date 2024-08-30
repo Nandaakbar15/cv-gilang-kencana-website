@@ -34,6 +34,7 @@
         @include('dashboardadmin.partials.sidebar')
         <!-- partial -->
         <div class="main-panel">
+          @include('flash-message')
           @yield('content')
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->

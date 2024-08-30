@@ -3,21 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
 
 class UserController extends Controller
 {
-    public function index() // view data user
+    public function index()
     {
-        $user = User::all();
-        return view("dashboardadmin.datauser.viewdatauser", [
-            'user' => $user
-        ]);
+
     }
 
-    public function deleteUser(User $user) // hapus data user
+    public function about()
     {
-        $user->delete();
-        return redirect('/datauser')->with('success', 'User berhasil di hapus!');
+
     }
 }

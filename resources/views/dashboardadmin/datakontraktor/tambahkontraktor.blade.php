@@ -34,8 +34,17 @@
                         @enderror
                     </div>
                     <div class="form-group">
+                        <label for="no_telp">Nomor Telepon Kontraktor</label>
+                        <input type="no_telp" class="form-control @error('no_telp') is-invalid @enderror" id="no_telp" name="no_telp" placeholder="Nomor telepon Kontraktor" required="{{ old('no_telp') }}">
+                        @error('no_telp')
+                            <div class="is-invalid">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
                         <label for="foto">Foto Kontraktor</label>
-                        <input type="file" class="form-control @error('foto') is-invalid @enderror" id="foto" placeholder="Foto Kontraktor" required="{{ old('foto') }}">
+                        <input type="file" class="form-control @error('foto') is-invalid @enderror" id="foto" placeholder="Foto Kontraktor" name="foto" required="{{ old('foto') }}">
                         @error('foto')
                             <div class="is-invalid">
                                 {{ $message }}
@@ -44,7 +53,7 @@
                     </div>
                     <div class="form-group">
                         <label for="specialist">Specialist</label>
-                        <input type="text" class="form-control @error('specialist') is-invalid @enderror" id="specialist" placeholder="Foto Kontraktor" required="{{ old('specialist') }}">
+                        <input type="text" class="form-control @error('specialist') is-invalid @enderror" id="specialist" placeholder="Specialist" name="specialist" required="{{ old('specialist') }}">
                         @error('specialist')
                             <div class="is-invalid">
                                 {{ $message }}

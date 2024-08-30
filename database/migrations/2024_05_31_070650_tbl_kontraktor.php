@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id("id_kontraktor");
             $table->string("nama");
             $table->string("alamat");
-            $table->string("email", 20)->unique();
+            $table->string("email")->unique();
             $table->string("no_telp");
             $table->string("specialist");
             $table->string("foto");
