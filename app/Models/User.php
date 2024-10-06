@@ -45,4 +45,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function kontraktor()
+    {
+        return $this->hasMany(Kontraktor::class, "id_kontraktor");
+    }
 }

@@ -28,9 +28,17 @@ Route::middleware(['web', 'auth', 'checkRole:admin'])->prefix('admin')->group(fu
     Route::get("/viewtambahkontraktor", "App\Http\Controllers\KontraktorController@create");
     Route::post("/tambahkontraktor", "App\Http\Controllers\KontraktorController@store");
     Route::delete("/hapusKontraktor/{kontraktor}", "App\Http\Controllers\KontraktorController@destroy");
+    Route::get("/datacontact", "App\Http\Controllers\ContactController@index");
+    Route::get("/viewtambahkontak", "App\Http\Controllers\ContactController@create");
+    Route::post("/tambahkontak", "App\Http\Controllers\ContactController@store");
+    Route::get("/ubahkontak/{contact}", "App\Http\Controllers\ContactController@edit");
+    Route::put("/ubahkontak/{contact}", "App\Http\Controllers\ContactController@update");
 });
 
 // routes user
 Route::prefix('user')->group(function() {
-    Route::get("/dashboarduser");
+    Route::get("/dashboarduser", "App\Http\Controllers\UserController@index");
+    Route::get("/abouts", "App\Http\Controllers\UserContrller@about");
+    Route::get("/contact", "App\Http\Controllers\UserController@contact");
+    Route::get("/listkontraktor", "App\Http\Controllers\UserController@listKontraktor");
 });

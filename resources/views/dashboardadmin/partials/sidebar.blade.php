@@ -19,5 +19,11 @@
                 <span class="menu-title">Data Kontraktor</span>
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/datacontact" aria-expanded="false" aria-controls="tables">
+                <i class="menu-icon mdi mdi-table"></i>
+                <span class="menu-title">Data Kontak</span>
+              </a>
+            </li>
           </ul>
         </nav>
