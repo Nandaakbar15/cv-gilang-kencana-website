@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Kontraktor;
+use App\Models\Contact;
 
 class UserController extends Controller
 {
@@ -19,7 +20,10 @@ class UserController extends Controller
 
     public function contact() // view halaman contact perusahaan CV Gilang Kencana
     {
-        return view("dashboard.contact.viewcontact");
+        $contact = Contact::all();
+        return view("dashboard.contact.viewcontact", [
+            "contact" => $contact
+        ]);
     }
 
     public function listKontraktor() // view halaman list kontraktor

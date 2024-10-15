@@ -38,7 +38,7 @@ Route::middleware(['web', 'auth', 'checkRole:admin'])->prefix('admin')->group(fu
 // routes user
 Route::prefix('user')->group(function() {
     Route::get("/dashboarduser", "App\Http\Controllers\UserController@index");
-    Route::get("/abouts", "App\Http\Controllers\UserContrller@about");
+    Route::get("/about", "App\Http\Controllers\UserController@about");
     Route::get("/contact", "App\Http\Controllers\UserController@contact");
     Route::get("/listkontraktor", "App\Http\Controllers\UserController@listKontraktor");
 });
