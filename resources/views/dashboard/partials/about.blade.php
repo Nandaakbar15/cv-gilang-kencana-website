@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>CV. Gilang Kencana</title>
+        <title>CV. Gilang Kencana Mulya</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -23,7 +23,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-xxl-6">
                             <div class="text-center my-5">
-                                <h1 class="fw-bolder mb-3">Tentang CV. Gilang Kencana</h1>
+                                <h1 class="fw-bolder mb-3">Tentang CV. Gilang Kencana Mulya</h1>
                                 <p class="lead fw-normal text-muted mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam magni quod sequi! Nobis pariatur esse, velit illum, itaque corrupti recusandae quis voluptatem asperiores cumque ab, quos tempora necessitatibus consequuntur?</p>
                             </div>
                         </div>

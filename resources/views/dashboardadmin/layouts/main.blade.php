@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CV Gilang Kencana </title>
+    <title>CV Gilang Kencana Mulya</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset("vendors/feather/feather.css") }}">
     <link rel="stylesheet" href="{{ asset("css/materialdesignicons.min.css") }}">

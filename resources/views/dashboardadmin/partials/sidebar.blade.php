@@ -16,7 +16,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/admin/daftarkontraktor" aria-expanded="false" aria-controls="tables">
                 <i class="menu-icon mdi mdi-table"></i>
-                <span class="menu-title">Data Kontraktor</span>
+                <span class="menu-title">Data Personil</span>
               </a>
             </li>
             <li class="nav-item">

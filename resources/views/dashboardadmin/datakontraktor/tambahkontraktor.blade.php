@@ -3,11 +3,11 @@
 @section('content')
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Tambah Kontraktor</h4>
+            <h4 class="card-title">Tambah Personil</h4>
                 <form class="forms-sample" action="/admin/tambahkontraktor" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="nama">Nama Kontraktor</label>
+                        <label for="nama">Nama Personil</label>
                         <input type="text" class="form-control @error('nama') is-invalid @enderror" id="nama" name="nama"  placeholder="Nama Kontraktor" required="{{ old("nama") }}">
                         @error('nama')
                             <div class="is-invalid">
@@ -34,7 +34,7 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="no_telp">Nomor Telepon Kontraktor</label>
+                        <label for="no_telp">Nomor Telepon</label>
                         <input type="no_telp" class="form-control @error('no_telp') is-invalid @enderror" id="no_telp" name="no_telp" placeholder="Nomor telepon Kontraktor" required="{{ old('no_telp') }}">
                         @error('no_telp')
                             <div class="is-invalid">
@@ -43,7 +43,7 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="foto">Foto Kontraktor</label>
+                        <label for="foto">Foto Personil</label>
                         <input type="file" class="form-control @error('foto') is-invalid @enderror" id="foto" placeholder="Foto Kontraktor" name="foto" required="{{ old('foto') }}">
                         @error('foto')
                             <div class="is-invalid">

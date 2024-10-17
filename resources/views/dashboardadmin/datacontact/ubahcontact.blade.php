@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary me-2">Ubah!</button>
-                    <a href="/admin/datacontact" class="btn btn-light">Cancel</a>
+                    <a href="/admin/datacontact" class="btn btn-light">Kembali</a>
                 </form>
             </div>
         </div>

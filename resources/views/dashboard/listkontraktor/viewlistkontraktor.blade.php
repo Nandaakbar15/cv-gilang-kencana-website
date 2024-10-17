@@ -3,16 +3,16 @@
 @section('content')
     <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Daftar Kontraktor</h4>
+                    <h4 class="card-title">Daftar Personil</h4>
                     <div class="table-responsive">
                       <table class="table table-hover">
                         <thead>
                           <tr>
-                            <th>Foto Kontraktor</th>
-                            <th>Nama Kontraktor</th>
-                            <th>Alamat</th>
+                            <th>Foto Personil</th>
+                            <th>Nama Personil</th>
+                            <th>Alamat Personil</th>
                             <th>Nomor HP</th>
-                            <th>Email Kontraktor</th>
+                            <th>Email</th>
                             <th>Specialist</th>
                           </tr>
                         </thead>

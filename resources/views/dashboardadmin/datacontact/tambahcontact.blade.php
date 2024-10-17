@@ -61,7 +61,7 @@
                         @enderror
                     </div>
                     <button class="btn btn-primary me-2">Tambah!</button>
-                    <a href="/admin/datacontact" class="btn btn-light">Cancel</a>
+                    <a href="/admin/datacontact" class="btn btn-light">Kembali</a>
                 </form>
             </div>
         </div>
