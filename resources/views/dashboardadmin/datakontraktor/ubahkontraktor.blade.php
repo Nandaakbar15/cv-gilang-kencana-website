@@ -18,15 +18,6 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="alamat">Alamat</label>
-                        <input type="text" class="form-control @error('alamat') is-invalid @enderror" id="alamat" name="alamat"  placeholder="Alamat Personil" autofocus value="{{ old("alamat", $kontraktor->alamat)  }}">
-                        @error('alamat')
-                            <div class="is-invalid">
-                                {{ $message }}
-                            </div>
-                        @enderror
-                    </div>
-                    <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" placeholder="Email Kontraktor" autofocus value="{{ old('email', $kontraktor->email) }}">
                         @error('email')

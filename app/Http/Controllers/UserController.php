@@ -33,4 +33,9 @@ class UserController extends Controller
             "kontraktor" => $kontraktor
         ]);
     }
+
+    public function portofolio()
+    {
+        return view("dashboard.portofolio.viewportofolio");
+    }
 }

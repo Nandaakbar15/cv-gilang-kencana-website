@@ -41,4 +41,5 @@ Route::prefix('user')->group(function() {
     Route::get("/about", "App\Http\Controllers\UserController@about");
     Route::get("/contact", "App\Http\Controllers\UserController@contact");
     Route::get("/listkontraktor", "App\Http\Controllers\UserController@listKontraktor");
+    Route::get("/portofolio", "App\Http\Controllers\UserController@portofolio");
 });

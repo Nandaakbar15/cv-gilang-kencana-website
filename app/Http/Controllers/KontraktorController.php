@@ -34,7 +34,6 @@ class KontraktorController extends Controller
         $validateData = $request->validate([
             "nama" => "required",
             "email" => "required",
-            "alamat" => "required",
             "no_telp" => "required",
             "specialist" => "required",
             "foto" => "required|image|mimes:jpeg,png,jpg,gif|max:2048"
@@ -67,10 +66,9 @@ class KontraktorController extends Controller
         $validateData = $request->validate([
             'nama' => 'required',
             'email' => 'required',
-            'alamat' => 'required',
             'no_telp' => 'required',
             'specialist' => 'required',
-            'foto' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
         if($request->has('foto')) {
