@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>CV Gilang Kenaca Mulya</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{{ asset("images/favicon.ico") }}" />
+        <link rel="icon" type="image/x-icon" href="{{ asset("images/logo CV Ginaya.jpg") }}" />
         <!-- Bootstrap icons-->
         <link href="{{ asset("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css") }}" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -27,26 +27,26 @@
                     <div class="row gx-5">
                         <div class="col-lg-6">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="{{ asset("https://dummyimage.com/600x400/343a40/6c757d") }}" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+                                <img class="img-fluid rounded-3 mb-3" src="{{ asset("images/Eksterior rumah.jpg") }}" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Eksterior Rumah</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="{{ asset("https://dummyimage.com/600x400/343a40/6c757d") }}" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+                                <img class="img-fluid rounded-3 mb-3" src="{{ asset("images/Meeting Room.jpg") }}" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Meeting Room</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mb-5 mb-lg-0">
-                                <img class="img-fluid rounded-3 mb-3" src="{{ asset("https://dummyimage.com/600x400/343a40/6c757d") }}" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+                                <img class="img-fluid rounded-3 mb-3" src="{{ asset("images/Ruang Manager.jpg") }}" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Ruang Manager</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative">
-                                <img class="img-fluid rounded-3 mb-3" src="{{ asset("https://dummyimage.com/600x400/343a40/6c757d") }}" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+                                <img class="img-fluid rounded-3 mb-3" src="{{ asset("images/Kitchen Set.jpg") }}" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Kitchen Set</a>
                             </div>
                         </div>
                     </div>
