@@ -33,6 +33,7 @@ class KontraktorController extends Controller
     {
         $validateData = $request->validate([
             "nama" => "required",
+            "alamat_personil" => "required",
             "email" => "required",
             "no_telp" => "required",
             "specialist" => "required",
@@ -65,6 +66,7 @@ class KontraktorController extends Controller
     {
         $validateData = $request->validate([
             'nama' => 'required',
+            'alamat_personil' => 'required',
             'email' => 'required',
             'no_telp' => 'required',
             'specialist' => 'required',

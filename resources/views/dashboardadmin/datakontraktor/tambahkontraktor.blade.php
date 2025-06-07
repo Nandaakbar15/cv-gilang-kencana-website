@@ -16,6 +16,15 @@
                         @enderror
                     </div>
                     <div class="form-group">
+                        <label for="alamat_personil">Alamat Personil</label>
+                        <input type="text" class="form-control @error('alamat_personil') is-invalid @enderror" id="alamat_personil" name="alamat_personil"  placeholder="Nama Kontraktor" required="{{ old("alamat_personil") }}">
+                        @error('alamat_personil')
+                            <div class="is-invalid">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" placeholder="Email Kontraktor" required="{{ old('email') }}">
                         @error('email')

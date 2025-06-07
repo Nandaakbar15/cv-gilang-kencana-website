@@ -21,7 +21,7 @@
                            <tr>
                                 <td><img src="{{ asset($item->foto) }}" width="100px" height="100px"></td>
                                 <td>{{ $item->nama }}</td>
-                                <td>{{ $item->alamat }}</td>
+                                <td>{{ $item->alamat_personil }}</td>
                                 <td>{{ $item->no_telp }}</td>
                                 <td>{{ $item->email }}</td>
                                 <td>{{ $item->specialist }}</td>

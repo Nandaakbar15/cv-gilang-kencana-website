@@ -20,7 +20,7 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
     <!-- endinject -->
-    <link rel="shortcut icon" href="{{ asset("images/favicon.png") }}" />
+    <link rel="shortcut icon" href="{{ asset("images/logo CV Ginaya.jpg") }}" />
   </head>
   <body>
     @include('flash-message')

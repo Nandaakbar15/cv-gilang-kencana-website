@@ -11,6 +11,7 @@
                           <tr>
                             <th>Foto Personil</th>
                             <th>Nama Personil</th>
+                            <th>Alamat Personil</th>
                             <th>Nomor HP</th>
                             <th>Email</th>
                             <th>Specialist</th>
@@ -22,6 +23,7 @@
                            <tr>
                                 <td><img src="{{ asset($item->foto) }}" width="130px" height="300px"></td>
                                 <td>{{ $item->nama }}</td>
+                                <td>{{ $item->alamat_personil }}</td>
                                 <td>{{ $item->no_telp }}</td>
                                 <td>{{ $item->email }}</td>
                                 <td>{{ $item->specialist }}</td>

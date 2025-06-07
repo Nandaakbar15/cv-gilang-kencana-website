@@ -9,7 +9,7 @@ class Kontraktor extends Model
 {
     protected $table = 'tbl_kontraktor';
     protected $primaryKey = "id_kontraktor";
-    protected $fillable = ["nama", "no_telp", "email","specialist", "foto"];
+    protected $fillable = ["nama", "alamat_personil", "no_telp", "email", "specialist", "foto"];
 
     public function user()
     {
