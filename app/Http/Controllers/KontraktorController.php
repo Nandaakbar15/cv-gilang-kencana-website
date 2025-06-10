@@ -70,7 +70,7 @@ class KontraktorController extends Controller
             'email' => 'required',
             'no_telp' => 'required',
             'specialist' => 'required',
-            'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
         if($request->has('foto')) {

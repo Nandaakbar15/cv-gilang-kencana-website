@@ -37,7 +37,7 @@ class ContactController extends Controller
             'email' => 'required',
             'no_telp' => 'required',
             'pekerjaan' => 'required',
-            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'gambar' => 'nullable|required|image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
         $file = $request->file('gambar');

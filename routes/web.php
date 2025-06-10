@@ -23,7 +23,7 @@ Route::middleware(['web', 'auth', 'checkRole:admin'])->prefix('admin')->group(fu
     Route::get("/datauser", "App\Http\Controllers\DataUserController@index");
     Route::delete("/hapusdatauser/{user}", "App\Http\Controllers\DataUserController@deleteUser");
     Route::get("/ubahkontraktor/{kontraktor}",  "App\Http\Controllers\KontraktorController@edit");
-    Route::put("/ubahkontraktor/{kontraktor}", "App\Http\COntrollers\KontraktorController@update");
+    Route::put("/ubahkontraktor/{kontraktor}", "App\Http\Controllers\KontraktorController@update");
     Route::get("/daftarkontraktor", "App\Http\Controllers\KontraktorController@index");
     Route::get("/viewtambahkontraktor", "App\Http\Controllers\KontraktorController@create");
     Route::post("/tambahkontraktor", "App\Http\Controllers\KontraktorController@store");
