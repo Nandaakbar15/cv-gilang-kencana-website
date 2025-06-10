@@ -43,7 +43,7 @@ class UserController extends Controller
         $portfolios = [
             [
                 'judul' => 'Eksterior Rumah',
-                'gambar' => 'images/Eksterior Rumah.jpg'
+                'gambar' => 'images/Eksterior rumah.jpg'
             ],
             [
                 'judul' => 'Meeting Room',
